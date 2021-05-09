@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<style type="text/css">
+		*,
+		*:before,
+		*after
+		{
+			box-sizing: border-box;
+		}
+		body
+		{
+			font-family: poppins;
+			margin: 0;
+			display: grid;
+			font-size: 14px;
+		}
+		#pic img
+		{
+			
+		
+	         width: 100%;
+	         height: 100vh;
+			background-position: center;
+			background-size: cover;
+			
+			
+		} 
+	 /* 	.overlay
+		{
+		    background-color:black;
+          position: relative;
+            
+             
+		}*/
+
+				
+	
+		header
+		{
+			position: absolute !important;
+			top: 10%;
+			left: 0;
+			padding: 0 100px;
+			width: 100%;
+			box-sizing: border-box;
+
+            
+		}
+		header:hover
+		{
+			cursor: pointer;
+             height: 30%;
+             opacity: 0.6;
+             background-color: black;
+
+		}
+		header .logo
+		{
+			
+			float: left;
+		}
+		
+	
+		header nav
+		{
+          float: right;
+           position: sticky;
+             top: -30px;
+          
+		}
+		header nav ul 
+		{
+			margin: 10px;
+			padding: 10px;
+			display: flex;
+            
+		}
+		header nav ul li
+		{
+			list-style-type: none;
+		}
+		header nav ul li a
+		{
+			text-decoration: none;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 20px;
+			color: white;
+			display: block;
+		}
+		header nav ul li a:hover
+		
+
+		{
+			color: navy;
+			background-color:#95afc0;
+		}
+		.menu-icon
+		{
+			color: #fff;
+			float: right;
+			line-height: 50px;
+			font-size: 24px;
+			cursor: pointer;
+			display: none;
+		}
+		@media (max-width: 991px)
+		{
+			header
+			{
+				padding: 10 10px;
+			}
+			header nav 
+			{
+		
+				width: 50%;
+				height: calc(70vh - 50px);
+				background-color: rgba(0,0,0,0.6);
+				position: absolute;
+				top: 80%;
+				left: -100%;
+				transition: 0.5s;
+			} 
+			.menu-icon
+			{
+				display: block;
+				padding: 0px;
+			}
+			header nav.active
+			{
+				left: 0;
+			}
+			header nav ul
+			{
+				display: block;
+				text-align: center;
+			}
+		
+			
+		}
+
+    .container
+    {
+    	margin-top: 100px;
+    }
+    .inner
+    {
+    	overflow: hidden;
+    }
+    .inner img
+    {
+    	transition: all 0.6s ease;
+    }
+    .inner:hover  img
+    {
+    	transform: scale(1.5);
+    }
+ 
+    .col-lg-4
+    {
+     padding: 30px;
+    }
+
+
+
+		.container
+		{
+			text-align: center;
+             justify-content: space-between;
+             margin-top: 100px;
+		}
+
+		 .play-btn
+   {
+   	width: 50%;
+   	position: absolute;
+    top:30%;
+   	cursor: pointer;
+   	transition: 0.5s;
+    left: 40%;
+     height: 15%;
+     width: 12%;
+     opacity: 0;
+   }
+   .col-lg-4:hover .play-btn
+   {
+   	opacity: 3;
+   }
+
+   .footer
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 50px;
+	color: red;
+	background-color: black;
+}
+.footer > *
+{
+  flex: 1 100%;
+}
+.l-footer
+{
+	margin-right: 1.25em;
+	margin-bottom: 2em;
+}
+h2
+{
+	font-size: 16px;
+	font-weight: 900;
+}
+.footer ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+.footer li
+{
+	line-height: 2em;
+}
+.footer a
+{
+	text-decoration: none;
+	color: white;
+}
+  .r-footer
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+.r-footer > *
+{
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+.box a
+{
+	text-decoration: none;
+}
+.h-box
+{
+	column-count: 2;
+	column-gap: 1.25em;
+}
+.b-footer
+{
+	text-align: center;
+	color: red;
+	padding-top: 50px;
+}
+.l-footer p
+{
+	padding-right: 20%;
+	color: #999;
+
+}
+
+@media screen and (min-width: 600px)
+{
+	.r-footer > *
+	{
+		flex: 1;
+	}
+	.features
+	{
+		flex-grow: 2;
+	}
+	.l-footer
+	{
+		flex: 1 0px;
+	}
+	.r-footer
+	{
+		flex: 2 0px;
+	}
+}
+
+	 </style>
+
+  </head>
+<body onload="alert('Name- Rajan Kumar. \nMobile No-7888734078.\n Email id-rajansir788@gmail.com');">
+    
+	 <a href=""></a>
+	  <header class="navbar-wrapper">
+	  	  <div class="logo">
+               <img src="https://www.inditales.com/wp-content/uploads/2017/01/varanasi-souvenirs.jpg" class="img-fluid" style="width: 80px; height: 100px;">
+
+	  	  </div>
+	  	  <nav>
+	  	  	     <ul>
+                  	    <li><a href="" class="active">HOME</a></li>
+                  	      <li><a href="https://www.facebook.com/rajankumarsingh721">ABOUT</a></li> 
+                  	        <li><a href="">Allownce missing</a></li>
+                  	          <li><a href="">SERVICES</a></li>
+                  	            <li><a href="">Career Point</a></li> 
+                  	              <li><a href="">CONTACT US</a>
+
+                  </ul>
+	  	  </nav>
+	  	  <div class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	  	</header> <!------end header--->
+
+	  	<!-- image start -->
+	  	 <div class="overlay">
+	  	
+       
+	  	  <div id="pic">
+	  	       	<img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRG0338fjycHSKAkyJDGDD2qPwAUJ4yQATj1w7Le6n4U_A158CJhsF3z7texvsFdJ9URuM8rU1g7AQfttjRU7hx2A" class="img-fluid">
+	  	  </div>
+	  	</div>
+           <!-- image end -->
+              <!---start card--->
+           <div class="container">
+                        <div class="row">
+
+                  	<div class="col-lg-4"><!--1st col card start-->
+                            		<div class="card shadow" style="width: 100%;">
+
+                                  <div class="inner">
+                                              	 <img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2020/06/Website-Marketing-Blog-Header-Small.png" class="card-img-top" alt="...">
+                                  </div>
+                                  <div class="card-body text-center">
+								                  <h5 class="card-title">Marketing</h5>
+								                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								                   </p>
+								                   <a href="#" class="btn btn-success">Search More...</a>
+								  </div>
+                           </div>
+               	</div><!--1st col card end-->
+
+                	<div class="col-lg-4"><!--2st col card start-->
+			  	   	  			<div class="card shadow" style="width: 100%;">
+		            
+		                             <div class="inner">
+
+		               	              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvySeg8b9ntPy7qKB1vwl61NWZQSNku_2NGA&usqp=CAU" class="card-img-top" alt="...">
+		                            </div>
+
+		                            <div class="card-body text-center">
+				                            <h5 class="card-title"><h4>Marketing</h4></h5>
+				                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				                             </p>
+				                            <a href="#" class="btn btn-success">Search More...</a>
+		                            </div>
+		                        </div>
+                	</div><!--1st col card end-->
+
+	  	   	  		       	<div class="col-lg-4"><!--3rd col card start--->
+	  	   	  			<div class="card shadow" style="width: 100%;">
+            
+                          <div class="inner">
+
+                            <img src="https://www.intracen.org/uploadedImages/intracenorg/Content/Redesign/News/COVID_-_19/28May_Blog_image_ITC%20COVID-19%20Business%20Impact%20Survey.jpg" class="card-img-top" alt="...">
+                          </div>
+                            <div class="card-body text-center">
+		                          <h5 class="card-title"><h4>Marketing</h4></h5>
+		                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		                          </p>
+		                          <a href="#" class="btn btn-success">Search More...</a>
+                           </div>
+                        </div>
+	  	   	  	</div><!--3st col card end-->
+	  	   	
+	  	   	  </div><br><br><!----row end--->
+
+	  	   	 
+	  	   
+         <!-- 2nd row start -->
+             <div class="row">
+	  	   	  	
+	  	   	  	<div class="col-lg-4">
+	  	   	  		<div class="card shadow" style="width:  100%;">
+                       <div class="inner">
+                       	 <img src="https://images.unsplash.com/photo-1607653039028-1268c6bcb25d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dmxvZ2dpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="card-img-top" alt="..." class="img-fluid">
+                       </div>	
+                       	<a href="https://www.youtube.com/watch?v=C8FHNa7wcvI">
+                       <img src="https://www.freeiconspng.com/uploads/video-play-icon-11.png" class="play-btn">
+
+                     </a>
+ 
+                            <div class="card-body text-center">
+                                
+                                <h2 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 </h2>
+                                
+                            </div>
+                    </div>
+	  	   	  	</div><!--1st card end-->
+
+	  	   	  	<div class="col-lg-4">
+	  	   	  		<div class="card shadow" style="width: 100%;">
+                       <div class="inner">
+                       	 <img src="https://images.unsplash.com/photo-1607653039028-1268c6bcb25d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dmxvZ2dpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="card-img-top" alt="..." class="img-fluid">
+                       </div>	
+                       	<a href="https://www.youtube.com/watch?v=C8FHNa7wcvI">
+                       <img src="https://www.freeiconspng.com/uploads/video-play-icon-11.png"class="play-btn">
+
+                     </a>
+ 
+                            <div class="card-body text-center">
+                                
+                                <h2 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 </h2>
+                                
+                            </div>
+                    </div>
+	  	   	  	</div><!--2nd card end-->
+
+	  	   	  	<div class="col-lg-4">
+	  	   	  		<div class="card shadow" style="width:  100%;">
+                       <div class="inner">
+                       	 <img src="https://images.unsplash.com/photo-1607653039028-1268c6bcb25d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dmxvZ2dpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="card-img-top" alt="..." class="img-fluid">
+                       </div>	
+                       	<a href="https://www.youtube.com/watch?v=C8FHNa7wcvI">
+                       <img src="https://www.freeiconspng.com/uploads/video-play-icon-11.png" class="play-btn">
+
+                     </a>
+ 
+                            <div class="card-body text-center">
+                                
+                                <h2 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 </h2>
+                                
+                            </div>
+                    </div>
+	  	   	  	</div><!--3rd card end-->
+	  	   	  	<!-- 2nd row end -->
+             </div> 
+	            </div><!----- container end card--->
+             <!-- footer part -->
+
+             <footer class="footer">
+             	       <div class="l-footer">
+             	       	<h1><img src="" alt=""></h1>
+             	       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             	       	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             	       	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             	       	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+             	       	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+             	       	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             	       	
+             	       </div>
+             	       <!-- end div -->
+
+             	       <ul class="r-footer">
+             	       	<li><h2>Explore</h2>
+                             <ul class="box">
+                             	<li><a href="">Home</a></li>
+                             	<li><a href="">About</a></li>
+                             	<li><a href="">Albums</a></li>
+                             	<li><a href="">Careers</a></li>
+                             </ul>
+             	       	</li>
+             	       	   <li class="features">
+             	       	   	<h2>Need Help?</h2>
+             	       	   	<ul class="box h-box">
+             	       	   		 <li><a href="">Blog</a></li>
+             	       	   		 <li><a href="">Pricing</a></li>
+             	       	   		 <li><a href="">Sales</a></li>
+             	       	   		 <li><a href="">Tickets</a></li>
+             	       	   		 <li><a href="">Visit</a></li>
+             	       	   		 <li><a href="">Customer Services</a></li>
+             	       	   	</ul>
+             	       	   </li>
+             	       	   <li>
+             	       	   	<h2>Lorem </h2>
+             	       	   	<ul class="box">
+             	       	   		   <li><a href="">Blog</a></li>
+             	       	   		   <li><a href="">Blog</a></li>
+             	       	   		 <li><a href="">Pricing</a></li>
+             	       	   		 <li><a href="">Sales</a></li>
+             	       	   	</ul>
+             	       	   </li>
+             	       </ul>
+                        <div class="b-footer">
+                        	<p>All Right Reserved by &copy; Priya 2021</p>
+                        </div>
+             </footer>
+ 
+	  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+ ></script>
+ <script type="text/javascript">
+ 	
+ 	    $(document) .ready(function()
+ 	    {
+           $('.menu-icon').click(function(){
+           	    $('nav').toggleClass('active')
+           })
+ 	    })
+ </script>
+           
+      
+</body>
+</html>
